@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/*     font-family: 'Barlow Condensed', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital@0;1&display=swap");
+/* font-family: 'Barlow', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary-red: hsl(0, 100%, 68%);
+  --color-dark-blue: hsl(230, 29%, 20%);
+  --color-dark-grayish-blue: hsl(230, 11%, 40%);
+  --color-grayish-blue: hsl(231, 7%, 65%);
+  --color-light-grayish-blue: hsl(207, 33%, 95%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1,
+a,
+button {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  /* padding: 3rem; */
+}
+
+nav {
+  font-family: "Barlow Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+  margin-bottom: 3rem;
+}
+
+.logo {
+  width: 2.5rem;
+}
+
+.ham-burger {
+  position: fixed;
+  right: 3rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 6rem;
+}
+
+.mobile-img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.mobile-img img {
+  width: 138%;
+}
+
+.about-main {
+  padding: 3rem;
+}
+
+.heading {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  font-family: "Barlow Condensed", sans-serif;
+  gap: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.heading span:nth-child(1) {
+  font-weight: bold;
+  color: var(--color-light-grayish-blue);
+  background: var(--color-dark-blue);
+  border-radius: 2rem;
+  padding: 0.2rem 1rem;
+}
+
+.heading span:nth-child(2) {
+  letter-spacing: 0.5rem;
+  color: var(--color-grayish-blue);
+}
+
+.primary-heading {
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: var(--color-dark-blue);
+  margin-bottom: 1.5rem;
+}
+
+.para {
+  font-size: 2rem;
+  color: var(--color-dark-grayish-blue);
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: var(--color-primary-red);
+  color: var(--color-light-grayish-blue);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  font-weight: bold;
+  word-spacing: 0.2rem;
+  margin-right: 1.5rem;
+}
+
+.preview {
+  text-decoration: none;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: var(--color-grayish-blue);
+  word-spacing: 0.2rem;
+  letter-spacing: 0.2rem;
+}
+
+/* UTILITIES */
+
+.none {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .ham-burger {
+    display: none;
+  }
+
+  .logo {
+      width: 30px;
+  }
+
+  .nav-bar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 8rem;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 3.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .nav-link a {
+      color: #000;
+  }
+
+  .main {
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6rem;
+  }
+}
