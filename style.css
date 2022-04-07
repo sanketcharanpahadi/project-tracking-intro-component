@@ -137,6 +137,21 @@ button {
   letter-spacing: 0.2rem;
 }
 
+.bg {
+    height: 67%;
+    width: 52%;
+    background: var(--color-light-grayish-blue);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -9;
+    border-bottom-left-radius: 6rem;
+}
+
+.nav-link:last-child a{
+    color: var(--color-dark-grayish-blue);
+}
+
 /* UTILITIES */
 
 .none {
@@ -149,32 +164,70 @@ button {
   }
 
   .logo {
-      width: 30px;
+    width: 32px;
   }
 
   .nav-bar {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 6rem 8rem;
+    padding: 6rem 12rem;
+    padding-right: 20rem;
+    margin-bottom: 5rem;
+  }
+
+  .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-top: 1rem;
+    background-color: var(--color-grayish-blue);
   }
 
   .nav-links {
     display: flex;
     gap: 3.5rem;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     font-weight: bold;
+    letter-spacing: 0.1rem;
   }
 
   .nav-link a {
-      color: #000;
+    color: #000;
   }
 
   .main {
-      flex-direction: row-reverse;
-      align-items: center;
-      justify-content: space-between;
-      padding: 6rem;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8rem;
+    margin-bottom: 12rem;
+  }
+
+  .mobile-img {
+    width: 100%;
+  }
+
+  .primary-heading {
+    font-size: 6rem;
+    margin-bottom: 2.5rem;
+    line-height: 1;
+  }
+
+  .para {
+    width: 70%;
+    margin-bottom: 6rem;
+  }
+
+  button {
+    padding: 1.3rem 3.5rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .preview {
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
   }
 }
