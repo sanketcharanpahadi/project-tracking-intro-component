@@ -57,6 +57,7 @@ nav {
 .ham-burger {
   position: fixed;
   right: 3rem;
+  cursor: pointer;
 }
 
 .main {
@@ -149,13 +150,54 @@ button {
 }
 
 .nav-link:last-child a{
-    color: var(--color-dark-grayish-blue);
+    color: var(--color-grayish-blue);
+    margin-bottom: 0;
 }
 
 /* UTILITIES */
 
 .none {
   display: none;
+}
+
+.hamburger-menu {
+  background-color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  padding: 2.5rem 0;
+  box-shadow: -.1rem .2rem .7rem var(--color-grayish-blue);
+  position: absolute;
+  top: 9rem;
+  width: 87.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links li {
+  margin-bottom: 2.1rem;
+}
+
+.dot {
+  width: 80%;
+  background-color: var(--color-grayish-blue);
+  height: 1px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.nav-links li a{
+  color: var(--color-dark-blue);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.block {
+  display: block;
 }
 
 @media (min-width: 768px) {
